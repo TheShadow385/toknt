@@ -33,6 +33,11 @@ def process(filename: String, input: String): Option[Long] =
         new KotlinLexer(charStream).getAllTokens.stream.filter(_.getType match
           case KotlinLexer.NL => false
           case _              => true)
+      case "lpr" | "pas" =>
+        new PascalLexer(charStream).getAllTokens.stream.filter(_.getType match
+          case PascalLexer.NL => false
+          case _              => true)		  
+		  
     }
     .map(_.filter(_.getChannel != Lexer.HIDDEN).count)
 

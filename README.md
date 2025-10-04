@@ -1,7 +1,7 @@
 # toknt
 
 A source code token counter using antlr.
-Currently supports C, C++, C#, Haskell, Python, Rust.
+Currently supports C, C++, C#, Haskell, Pascal, Python and Rust.
 
 ## Adding a language
 

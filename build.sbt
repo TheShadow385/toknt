@@ -20,7 +20,8 @@ val lexers = Seq(
   "csharp/CSharpLexer.g4",
   "csharp/Java/CSharpLexerBase.java",
   "kotlin/kotlin/KotlinLexer.g4",
-  "kotlin/kotlin/UnicodeClasses.g4"
+  "kotlin/kotlin/UnicodeClasses.g4",
+  "pascal/pascal.g4"
 )
 
 ThisBuild / scalaVersion := "3.7.3"
